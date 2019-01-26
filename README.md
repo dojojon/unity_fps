@@ -62,7 +62,7 @@ The following steps broadly follow the Issue 3 artcle, but with lots fo details 
 5. In Project window add a ```Materials``` directory in ```Assets```
 6. Add new material in here, name it something appropriate ```BlueWall```
 7. Set the materials color.
-8. Drag material onto wall
+8. Drag material onto ```Wall```
 7. Click the play button, escape to exit
     1. Notice we can't look around using the mouse.
 
@@ -76,5 +76,41 @@ The following steps broadly follow the Issue 3 artcle, but with lots fo details 
     6. In Unity drag the script onto the ```Camera``` Capsule
 7. Click the play button, escape to exit
     1. Notice we can't look around using the mouse.
+
+
+### Add a weapon
+
+1. Right click the ```Player``` in Hierachy view and click add Empty Object
+2. Rename it ```Weapon```
+3. Right click the Hierachy view and click add Empty Object
+4. Rename it ```Projectile```
+5. Right click the ```Projectile``` in Hierachy view and click add Capsule Object
+6. Rename it ```Bullet```
+7. Using inspector rotate the it 90 degrees in the x axis
+8. Using inspector scale it ```.1``` on x, y and z
+6. Add new material in the materials director, name it something appropriate ```RedBullet```
+7. Set the materials color.
+8. Drag material onto ```Bullet```
+9. In the scrpts folder add a new script
+10. Name it ```ProjectileMovement```
+11. Double click to open in Visual Studio
+    1. Copy the example ```ProjectileMovement``` code into this new file
+    2. Save the script in Visual Studio
+    3. In Unity drag the script onto the ```Projectile``` object
+12. In Project window add a ```Scripts``` directory in ```Prefabs```
+13. In the scrpts folder add a new script
+14. Name it ```ActivateProjectile```
+15. Double click to open in Visual Studio
+    1. Copy the example ```ActivateProjectile``` code into this new file
+    2. Save the script in Visual Studio
+    3. In Unity drag the script onto the ```Weapon``` Object
+
+
+
+
+
+
+
+
 
 
